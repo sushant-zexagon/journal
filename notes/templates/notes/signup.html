@@ -1,0 +1,22 @@
+{%extends 'notes/base.html'%}
+{% block content %}
+<div class = 'loginbox'>
+	<h2>Sign Up</h2>
+	<form action='/signup/' method='POST'>
+		{% csrf_token %}
+		{% if error%}
+		<p>{{error}}</p>
+		{% endif %}
+		<label> Full Name</label><br>
+		<input type='text' name='full' placeholder='Full Name'><br>
+		<label> Date of Birth</label><br>
+		<input type='date' name='dob' placeholder='Date of Birth'><br>	
+		<label> Email</label><br>
+		<input type='email' name='email' placeholder='Email'><br>
+		<label> Password</label><br>
+		<input type='password' name='pwd' placeholder='Password'><br>
+		<input type='submit' value = 'Sign Up'>
+	</form>
+	<p>or <a href='/login/'>login</a> here!</p>
+</div>
+{% endblock %}

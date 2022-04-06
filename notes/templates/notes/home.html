@@ -1,0 +1,24 @@
+{%extends 'notes/base.html'%}
+{% block content %}
+<h1>Thoughts Organizer!</h1>
+{% for entry in entries %}
+	<div class = 'entry'>
+	{% if entry.image %}
+		<div class = 'entryimage'>
+		<img src='{{entry.image.url}}'>
+		</div>
+	{% endif %}
+	<h2>{{entry.dos}}</h2>
+	<p>{{entry.text}}</p>
+	{%for tag in entry.tags.all%}
+		<span>@{{tag.name}} </span>
+	{%endfor%}
+	<br>
+	{%for hashtag in entry.hashtags.all%}
+		<span>#{{hashtag.text}} </span>
+	{%endfor%}
+	<h3>Posted On: {{entry.dop}}</h3>
+
+	</div>
+{% endfor %}
+{% endblock %}

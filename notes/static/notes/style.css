@@ -1,0 +1,56 @@
+body {
+    background-color: #f2dbbf;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.entry {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.entryimage {
+    text-align: center;
+    overflow: hidden;
+}
+
+.entryimage img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.entry p {
+    font-size: 20px;
+    line-height: 1.2;
+    word-spacing: 5px;
+}
+
+.entry h2 {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #095b67;
+    font-weight: normal;
+    word-spacing: 5px;
+}
+
+.entry span {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #0F3325;
+    font-weight: normal;
+    word-spacing: 5px;
+}
+
+.entry h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #d82f5a;
+    font-weight: normal;
+    word-spacing: 5px;
+}
